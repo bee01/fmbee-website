@@ -1,0 +1,9 @@
+$(function(){
+  $('.js-flickity').flickity({
+    wrapAround:true,
+    autoPlay:5000,
+    pageDots:false,
+    prevNextButtons:false,
+    draggable:false
+  });
+});

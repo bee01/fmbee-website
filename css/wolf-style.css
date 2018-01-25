@@ -1,0 +1,31 @@
+body{
+background-color:#000;
+}
+.header-image{
+background-image: url(../images/bg-header-wolf.jpg);
+}
+#contents .contents-title{
+border-bottom:5px solid #5C1717;
+}
+#contents .contents-title > h2{
+color:#fff;
+}
+#contents .contents-left a{
+color:#fff;
+}
+#contents .contents-list{
+border:5px solid #5C1717;
+background:#000;
+}
+#contents .contents-list-in{
+background:#aaa;
+}
+#contents .contents-list-in h4{
+border-bottom:3px solid #5C1717;
+}
+#contents .contents-list-in h5{
+border-left:5px solid #5C1717;
+}
+#footer{
+background:url(../images/bg-footer-wolf.jpg);
+}
