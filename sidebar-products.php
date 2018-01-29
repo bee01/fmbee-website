@@ -1,0 +1,6 @@
+<li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="<?php echo home_url("/"); ?>products">全製品一覧</a></li>
+<li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="<?php echo home_url("/"); ?>categories/ios">iPhone/iPadアプリ</a></li>
+<li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="<?php echo home_url("/"); ?>categories/android">Androidアプリ</a></li>
+<li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="<?php echo home_url("/"); ?>categories/beeindex">beeIndexシリーズ</a></li>
+<li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="<?php echo home_url("/"); ?>categories/beecam">beeCamシリーズ</a></li>
+<li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="<?php echo home_url("/"); ?>categories/categories/sdk">各種SDK</a></li>

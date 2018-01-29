@@ -14,7 +14,7 @@
 get_header(); ?>
 
 <div class="contents-title">
-  <h2>HOME > Support(製品サポート)</h2>
+  <?php echo show_breadcrumb("HOME", "Supports(製品サポート)"); ?>
 </div>
 <div class="contents-in cf">
   <div class="contents-left">

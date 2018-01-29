@@ -24,11 +24,7 @@ get_header(); ?>
     <div class="contents-in cf">
       <div class="contents-left">
         <ul>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="<?php echo home_url("/"); ?>categories/ios">iPhone/iPadアプリ</a></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="<?php echo home_url("/"); ?>categories/android">Androidアプリ</a></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="<?php echo home_url("/"); ?>categories/beeindex">beeIndexシリーズ</a></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="<?php echo home_url("/"); ?>categories/beecam">beeCamシリーズ</a></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="<?php echo home_url("/"); ?>categories/sdk">各種SDK</a></li>
+          <?php get_template_part( 'sidebar-products', get_post_format() ); ?>
         </ul>
       </div>
       <div class="contents-right">

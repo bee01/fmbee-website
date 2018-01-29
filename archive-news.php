@@ -19,7 +19,7 @@
 get_header(); ?>
 
     <div class="contents-title">
-      <h2>HOME > NEWS(プレリリース)</h2>
+      <?php echo show_breadcrumb("HOME", "News(プレスリリース)"); ?>
     </div>
     <div class="contents-in cf">
       <div class="contents-left">
@@ -42,7 +42,7 @@ get_header(); ?>
         ?>
         <?php if ( $query->have_posts() ) : ?>
         <div id="beeindex" class="contents-list">
-          <h3><?php echo (single_term_title() != "") ? single_term_title() : "プレリリース"; ?></h3>
+          <h3><?php echo (single_term_title() != "") ? single_term_title() : "プレスリリース"; ?></h3>
           <div class="contents-list-in">
             <ul>
               <li>

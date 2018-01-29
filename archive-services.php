@@ -19,7 +19,7 @@
 get_header(); ?>
 
     <div class="contents-title">
-      <h2>HOME > Products(製品紹介)</h2>
+      <?php echo show_breadcrumb("HOME", "Services(受託開発事例)"); ?>
     </div>
     <div class="contents-in cf">
       <div class="contents-left">
@@ -52,6 +52,7 @@ get_header(); ?>
             				get_template_part( 'content-services', get_post_format() );
             			endwhile;
 
+/* ページネーションを非表示
                     global $wp_rewrite;
                     $paginate_base = get_pagenum_link(1);
                     if(strpos($paginate_base, '?') || ! $wp_rewrite -> using_permalinks()){
@@ -71,7 +72,7 @@ get_header(); ?>
                       'prev_text' => '< 前へ',
                       'next_text' => '次へ >',
                     ))."</div>";
-
+*/
                     wp_reset_postdata();
                   ?>
                 </li>
@@ -106,6 +107,7 @@ get_header(); ?>
             				get_template_part( 'content-services', get_post_format() );
             			endwhile;
 
+/* ページネーションを非表示
                     global $wp_rewrite;
                     $paginate_base = get_pagenum_link(1);
                     if(strpos($paginate_base, '?') || ! $wp_rewrite -> using_permalinks()){
@@ -125,7 +127,7 @@ get_header(); ?>
                       'prev_text' => '< 前へ',
                       'next_text' => '次へ >',
                     ))."</div>";
-
+*/
                     wp_reset_postdata();
                   ?>
                 </li>

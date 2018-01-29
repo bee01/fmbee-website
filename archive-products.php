@@ -19,16 +19,12 @@
 get_header(); ?>
 
     <div class="contents-title">
-      <h2>HOME > Products(製品紹介)</h2>
+      <?php echo show_breadcrumb("HOME", "Products(製品紹介)"); ?>
     </div>
     <div class="contents-in cf">
       <div class="contents-left">
         <ul>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="./../categories/ios">iPhone/iPadアプリ</a></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="./../categories/android">Androidアプリ</a></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="./../categories/beeindex">beeIndexシリーズ</a></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="./../categories/beecam">beeCamシリーズ</a></li>
-          <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="./../categories/sdk">各種SDK</a></li>
+        <?php get_template_part( 'sidebar-products', get_post_format() ); ?>
         </ul>
       </div>
       <div class="contents-right">
@@ -39,14 +35,14 @@ get_header(); ?>
             <ul>
         			<?php while ( have_posts() ) : the_post();
         				get_template_part( 'content-products', get_post_format() );
-        			endwhile;
-
-        			the_posts_pagination( array(
-        				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-        				'next_text'          => __( 'Next page', 'twentyfifteen' ),
-        				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-        			) ); ?>
+        			endwhile; ?>
             </ul>
+            <?php
+        			the_posts_pagination( array(
+                      'prev_text' => '< 前へ',
+                      'next_text' => '次へ >',
+        			) );
+            ?>
           </div>
         </div>
         <?php else : get_template_part( 'content', 'none' ); endif; ?>

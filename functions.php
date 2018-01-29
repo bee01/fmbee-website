@@ -405,3 +405,14 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since Twenty Fifteen 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/* 以下、自作関数 */
+function show_breadcrumb($from, $name){
+  if($from == "HOME"){
+    return "<h2><a href='".home_url()."'>HOME</a> > ".$name."</h2>";
+  }else if($from == "products"){
+    return "<h2><a href='".home_url()."'>HOME</a> > <a href='".home_url()."/products'>Products(製品紹介)</a> > ".$name."</h2>";
+  }else{
+    return "<h2><a href='".home_url()."'>HOME</a>";
+  }
+}
