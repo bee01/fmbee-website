@@ -14,72 +14,21 @@
 get_header(); ?>
 
 <div class="contents-title">
-  <?php echo show_breadcrumb("HOME", "Contacts(お問い合わせ)"); ?>
+  <h2>CONTACTS</h2>
+  <h3>下記のフォームよりFM.Beeへお問い合わせいただけます。</h3>
 </div>
 <div class="contents-in cf">
   <div class="contents-left">
     <ul>
-      <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="#contact">お問い合わせ</a></li>
-      <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="#privacy">プライバシーポリシー</a></li>
+      <?php global $page_kind;
+      $page_kind = "contacts";
+      get_sidebar("iphone"); ?>
     </ul>
   </div>
   <div class="contents-right">
     <div id="contact" class="contents-list">
       <h3>お問い合わせ</h3>
-      <div class="contents-list-in">
-        <ul>
-          <li>
-            <div class="product_summary">
-              <table class="product_table">
-                <tbody>
-                  <tr align="left" valign="top">
-                    <th>製品名</th>
-                    <td>
-                      <select name="product">
-                        <option value="beeCam かんたん！3D " selected="">beeCam かんたん！3D</option>
-                        <option value="beeCam かんたん！キャプチャV ">beeCam かんたん！キャプチャV</option>
-                        <option value="beeCam LightMeter ">beeCam LightMeter</option>
-                        <option value="beeCam EasyShot ">beeCam EasyShot</option>
-                        <option value="beeCam Easy連写(IntervalShot) ">beeCam Easy連写(IntervalShot/Android版)</option>
-                        <option value="beeCam Easy連写(iOS/iPhon版) ">beeCam Easy連写(iPhone版)</option>
-                        <option value="beeCam3D_SDK ">beeCam3D_SDK</option>
-                        <option value="beeCamVirtul_SDK ">beeCamVirtul_SDK</option>
-                        <option value="beeCamHDR_SDK ">beeCamHDR_SDK</option>
-                        <option value="beeIndex MHP3 ">beeIndex MHP3</option>
-                        <option value="beeIndex ぷち ">beeIndex ぷち</option>
-                        <option value="アヒルの脱走(Break Duck) ">アヒルの脱走(Break Duck)</option>
-                        <option value="beeApp 図書委員 ">beeApp 図書委員</option>
-                        <option value="beeApp ImageCollect ">beeApp ImageCollect</option>
-                        <option value="beeApp WA.RI.KAN ">beeApp WA.RI.KAN</option>
-                        <option value="Rubyを使った開発について ">Rubyを使った開発について</option>
-                        <option value="The Werewolf (人狼ゲーム）">The Werewolf (人狼ゲーム）</option>
-                        <option value="その他のお問合わせ ">その他のお問合わせ</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr align="left" valign="top">
-                    <th class="textareath">お問い合わせ内容</th>
-                    <td>
-                      <textarea></textarea>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>お名前（漢字） </th>
-                    <td><input type="text" /></td>
-                  </tr>
-                  <tr>
-                    <th>E-mail</th>
-                    <td><input type="text" /></td>
-                  </tr>
-                  <tr align="left" valign="top">
-                    <th>添付ファイル</th>
-                    <td><input type="file"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </li>
-        </ul>
+      <?php echo do_shortcode( '[contact-form-7 id="4" title="Contact form 1"]' ); ?>
       </div>
     </div>
 

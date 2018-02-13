@@ -14,24 +14,29 @@
 get_header(); ?>
 
 <div class="contents-title">
-  <?php echo show_breadcrumb("HOME", "Abouts(弊社について)"); ?>
+  <h2>ABOUTS</h2>
+  <h3>FM.Beeの会社概要についてご案内いたします。</h3>
 </div>
 <div class="contents-in cf">
   <div class="contents-left">
     <ul>
+      <?php global $page_kind;
+      $page_kind = "abouts";
+      get_sidebar("iphone"); ?>
+<!--
       <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="index.html">会社情報</a></li>
       <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="index.html#affiliation">加入団体・主要取引先</a></li>
       <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="index.html#accessmap">アクセスマップ</a></li>
       <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="index.html#recruit">採用情報</a></li>
+-->
     </ul>
   </div>
   <div class="contents-right">
-    <div id="aboutcompany" class="contents-list">
+    <div id="aboutcompany" class="contents-about contents-list">
       <h3>会社情報</h3>
       <div class="contents-list-in">
         <ul>
           <li>
-            <h4>会社概要</h4>
             <div class="product_summary">
               <table class="product_table">
                 <tbody>
@@ -109,69 +114,71 @@ get_header(); ?>
       </div>
     </div>
 
-    <div id="affiliation" class="contents-list">
+    <div id="affiliation" class="contents-partner contents-list">
       <h3>加入団体・主要取引先</h3>
       <div class="contents-list-in">
         <ul>
           <li>
+            <h4>加入団体</h4>
             <ul class="product_normallist">
               <li>
-                <a href="http://www.hisco.jp/index.html" target="_blank">ハイテクノロジー・ソフトウェア開発協同組合 (HISCO)　理事</a>
+                <a href="http://wao.jp.net/" target="_blank">一般社団法人女性と地域活性推進機構(WAO) 理事</a>
+              </li><li>
+                <a href="http://www.b-mall.ne.jp/CompanyDetail-IYbqCQdrJWiv.aspx" target="_blank">大阪商工会議所 会員</a>
+              </li><li>
+                <a href="http://www.osaka.cci.or.jp/jyoseikai/index.html" target="_blank">大阪商工会議所女性会 会員</a>
+              </li><li>
+                <a href="http://www.telecon.or.jp/index.html/" target="_blank">近畿情報通信協議会(KICC) 会員</a>
+              </li><li>
+                <a href="http://www.teamtsukamoto.sakura.ne.jp/" target="_blank">特定非営利活動法人　ウェアラブルコンピュータ研究開発機構(通称：チームつかもと) 会員</a>
+              </li><li>
+                <a href="http://www.hisco.jp/index.html" target="_blank">ハイテクノロジー・ソフトウェア開発協同組合(HISCO) 理事</a>
+              </li><li>
+                <a href="http://www.mssf.jp/" target="_blank">モバイルソーシャライズシステムフォーラム(MSSF) 会員</a>
               </li><li>
                 <a href="http://www.ruby-b.com/" target="_blank">Rubyビジネス推進協議会　理事</a>
-              </li><li>
-                <a href="http://wao.jp.net/" target="_blank">一般社団法人女性と地域活性推進機構(WAO)　理事</a>
-              </li><li>
-                <a href="http://www.b-mall.ne.jp/CompanyDetail-IYbqCQdrJWiv.aspx" target="_blank">大阪商工会議所　会員</a>
-              </li><li>
-                <a href="http://www.osaka.cci.or.jp/jyoseikai/index.html" target="_blank">大阪商工会議所女性会　会員</a>
-              </li><li>
-                <a href="http://www.teamtsukamoto.sakura.ne.jp/" target="_blank">特定非営利活動法人　ウェアラブルコンピュータ研究開発機構（通称：チームつかもと）会員</a>
-              </li><li>
-                <a href="http://www.telecon.or.jp/index.html/" target="_blank">近畿情報通信協議会(KICC)　会員</a>
-              </li><li>
-                <a href="http://www.mssf.jp/" target="_blank">モバイルソーシャライズシステムフォーラム（MSSF)　会員</a>
               </li>
             </ul>
+            <p>以上 (順不同・敬称略)</p>
+
+            <h4>主要取引先</h4>
             <ul class="product_normallist">
               <li>
+                <a href="http://www.elecom.co.jp/" target="_blank">エレコム株式会社</a>
+              </li><li>
                 <a href="http://www.z-bs.co.jp/" target="_blank">株式会社全農ビジネスサポート</a>
               </li><li>
                 <a href="http://www.tsyscom.co.jp/" target="_blank">株式会社豊通シスコム株式会社</a>
               </li><li>
-                <a href="http://www.elecom.co.jp/" target="_blank">エレコム株式会社</a>
-              </li><li>
-                <a href="http://www.logitec.co.jp/" target="_blank">ロジテック株式会社</a>
+                <a href="http://www.carinasystem.co.jp/" target="_blank">カリーナシステム株式会社</a>
               </li><li>
                 <a href="http://www.canon-its.co.jp/" target="_blank">キヤノンＩＴソリューションズ株式会社</a>
               </li><li>
                 <a href="http://www.stefany.co.jp/" target="_blank">銀座ステファニー化粧品株式会社</a>
               </li><li>
-                <a href="http://www.carinasystem.co.jp/" target="_blank">カリーナシステム株式会社</a>
-              </li><li>
                 デジタ・ドリシス
               </li><li>
-                以上、順不同
+                <a href="http://www.logitec.co.jp/" target="_blank">ロジテック株式会社</a>
               </li>
             </ul>
+            <p>以上 (五十音順・敬称略)</p>
           </li>
         </ul>
       </div>
     </div>
 
-    <div id="accessmap" class="contents-list">
+    <div id="accessmap" class="contents-access contents-list">
       <h3>アクセスマップ</h3>
       <div class="contents-list-in">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3280.481398897094!2d135.50628974138925!3d34.693036023711954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6ddaef689b9%3A0x49348d44147680a8!2z5pel5pysLCDjgJI1MzAtMDA0NyDlpKfpmKrlupzlpKfpmKrluILljJfljLropb_lpKnmuoDvvJHkuIHnm67vvJLiiJLvvJU!5e0!3m2!1sja!2sus!4v1499923907689" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
 
-    <div id="recruit" class="contents-list">
+    <div id="recruit" class="contents-recruit contents-list">
       <h3>採用情報</h3>
       <div class="contents-list-in">
         <ul>
           <li>
-            <h4>募集要項</h4>
             <div class="product_summary">
               <table>
                 <tbody>

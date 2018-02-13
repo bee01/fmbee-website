@@ -24,7 +24,9 @@ get_header(); ?>
     <div class="contents-in cf">
       <div class="contents-left">
         <ul>
-          <?php get_template_part( 'sidebar-products', get_post_format() ); ?>
+          <?php global $page_kind;
+          $page_kind = "products";
+          get_sidebar("iphone"); ?>
         </ul>
       </div>
       <div class="contents-right">

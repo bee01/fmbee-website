@@ -25,18 +25,18 @@
       <div class="header-image-in cf">
         <div class="header-image-left">
           <a href="<?php echo home_url("/"); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-company.png" alt />
+            <img src="<?php echo get_template_directory_uri(); ?>/images/logo_green.png" alt />
           </a>
         </div>
         <div class="header-image-right">
-          <a href="<?php echo home_url("/"); ?>">Home</a>
-          <a href="<?php echo home_url("/"); ?>news">News</a>
-          <a href="<?php echo home_url("/"); ?>services">Service</a>
-          <a href="<?php echo home_url("/"); ?>abouts">About</a>
-          <a href="<?php echo home_url("/"); ?>products">Products</a>
-          <a href="<?php echo home_url("/"); ?>supports">Support</a>
-          <a href="<?php echo home_url("/"); ?>contacts">Contact</a>
-          <a href="javascript:void(0);"></a>
+          <a href="<?php echo home_url("/"); ?>"><h2>Home</h2><p>ホームへ戻る</p></a>
+          <a href="<?php echo home_url("/"); ?>news"><h2>News</h2><p>ニュース</p></a>
+          <a href="<?php echo home_url("/"); ?>services"><h2>Service</h2><p>開発事例</p></a>
+          <a href="<?php echo home_url("/"); ?>abouts"><h2>About</h2><p>弊社について</p></a>
+          <a href="<?php echo home_url("/"); ?>products"><h2>Products</h2><p>製品情報</p></a>
+          <a href="<?php echo home_url("/"); ?>supports"><h2>Support</h2><p>製品サポート</p></a>
+          <a href="<?php echo home_url("/"); ?>contacts"><h2>Contact</h2><p>お問い合わせ</p></a>
+<!--          <a href="javascript:void(0);"></a>-->
         </div>
       </div>
     </div>

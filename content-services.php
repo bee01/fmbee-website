@@ -19,7 +19,7 @@ $thumbnail_url = wp_get_attachment_image_src ($thumbnail_id);
 ?>
 
 <li>
-  <dl class="product_summary cf">
+  <dl class="column_list column_summary cf">
     <dt>
       <?php
         // サムネイルのsourceがあるか
@@ -30,16 +30,11 @@ $thumbnail_url = wp_get_attachment_image_src ($thumbnail_id);
         }
       ?>
     </dt>
-    <dd class="app_summary">
+    <dd class="column_list_in">
       <?php
         echo '<h4>'.get_the_title().'</h4>';
-        echo '<p class="app_summary_in">'.get_the_content().'</p>';
         echo '<p class="app_summary_link">';
         echo '[公開日] '.get_the_date();
-        if($more_detail || $publisher_name){
-          if($publisher_name) echo "　".$publisher_name;
-          if($more_detail) echo "<br /><a href='".get_permalink()."'>製品詳細ページはこちら</a>";
-        }
         echo '</p>';
       ?>
     </dd>

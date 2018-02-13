@@ -19,12 +19,15 @@
 get_header(); ?>
 
     <div class="contents-title">
-      <?php echo show_breadcrumb("HOME", "Services(受託開発事例)"); ?>
+      <h2>SERVICES</h2>
+      <h3>FM.Beeのシステム開発の一例をご紹介いたします。</h3>
     </div>
     <div class="contents-in cf">
       <div class="contents-left">
         <ul>
-          <?php get_sidebar("services"); ?>
+          <?php global $page_kind;
+          $page_kind = "services";
+          get_sidebar("iphone"); ?>
         </ul>
       </div>
       <div class="contents-right">
@@ -42,7 +45,7 @@ get_header(); ?>
         ?>
 
         <?php if ( $query->have_posts() ) : ?>
-        <div id="area-services" class="contents-list">
+        <div id="development" class="contents-list">
           <h3><?php echo (single_term_title() != "") ? single_term_title() : "システム開発事例"; ?></h3>
           <div class="contents-list-in">
             <ul>
@@ -97,7 +100,7 @@ get_header(); ?>
         <?php else : get_template_part( 'content', 'none' ); endif; ?>
 
         <?php if ( $query->have_posts() ) : ?>
-        <div id="area-services" class="contents-list">
+        <div id="coverage" class="contents-list">
           <h3><?php echo (single_term_title() != "") ? single_term_title() : "組込ソフトウェア開発"; ?></h3>
           <div class="contents-list-in">
             <ul>

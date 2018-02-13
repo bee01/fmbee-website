@@ -20,3 +20,7 @@
 <?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.1.3.js"></script>
+<?php if(!is_home()){
+  echo '<script type="text/javascript" src="'.get_template_directory_uri().'/js/jquery.iPhone.js" type="text/css" ></script>';
+  echo '<script type="text/javascript" src="'.get_template_directory_uri().'/js/jquery.panelIcon.js" type="text/css" ></script>';
+} ?>

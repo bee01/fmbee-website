@@ -14,18 +14,19 @@
 get_header(); ?>
 
 <div class="contents-title">
-  <?php echo show_breadcrumb("HOME", "Supports(製品サポート)"); ?>
+  <h2>SUPPORTS</h2>
+  <h3>FM.Beeの製品に関するサポート情報をご覧いただけます。</h3>
 </div>
 <div class="contents-in cf">
   <div class="contents-left">
     <ul>
-      <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="#beeindex">よくある御質問</a></li>
-      <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="#products">製品に関するサポート</a></li>
-      <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="#sdk">SDKに関するサポート</a></li>
+      <?php global $page_kind;
+      $page_kind = "supports";
+      get_sidebar("iphone"); ?>
     </ul>
   </div>
   <div class="contents-right">
-    <div id="beeindex" class="contents-list">
+    <div id="qa" class="contents-list">
       <h3>よくある御質問</h3>
       <div class="contents-list-in">
         <ul>
@@ -33,7 +34,7 @@ get_header(); ?>
             <h5>製品概要</h5>
 
             <dl class="qa_drawer">
-              <dt class="">beeCam かんたん! 3D</dt>
+              <dt class=""><p><span>beeCam かんたん! 3D</span></p></dt>
               <dd style="display: none;">
                 <dl>
                   <dt><span>Q.</span>2台のWebカメラを認識しないのですが？</dt>
@@ -81,12 +82,12 @@ get_header(); ?>
                 <p>※その他、ご不明な点につきましては、<a href="contact.html?product=3D">こちらからお問い合わせ</a>ください。 </p>
               </dd>
 
-              <dt class="">beeCam かんたん! キャプチャV</dt>
+              <dt class=""><p><span>beeCam かんたん! キャプチャV</span></p></dt>
               <dd style="display: none;">現在準備中
                 <p>※ご不明な点につきましては、<a href="contact.html?product=CaptureV">こちらからお問い合わせ</a>ください。 </p>
               </dd>
 
-              <dt class="">beeCam LightMeter</dt>
+              <dt class=""><p><span>beeCam LightMeter</span></p></dt>
               <dd style="display: none;">
                 <dl>
                   <dt><span>Q.</span>露出が測定できないのですが？</dt>
@@ -98,7 +99,7 @@ get_header(); ?>
                 <p>※その他、ご不明な点につきましては、<a href="contact.html?product=LightMeter">こちらからお問い合わせ</a>ください。</p>
               </dd>
 
-              <dt class="">beeCam EasyShot</dt>
+              <dt class=""><p><span>beeCam EasyShot</span></p></dt>
               <dd style="display: none;">
                 <dl>
                   <dt><span>Q.</span>アプリケーションの表示が縦表示にならないのですが？</dt>
@@ -117,7 +118,7 @@ get_header(); ?>
                 <p>※その他、ご不明な点につきましては、<a href="contact.html?product=LightMeter">こちらからお問い合わせ</a>ください。</p>
               </dd>
 
-              <dt class="">beeCam Easy連写（Android版）</dt>
+              <dt class=""><p><span>beeCam Easy連写（Android版）</span></p></dt>
               <dd style="display: none;">
 
                 <dl>
@@ -144,7 +145,7 @@ get_header(); ?>
                 <p>※その他、ご不明な点につきましては、<a href="contact.html?product=LightMeter">こちらからお問い合わせ</a>ください。</p>
               </dd>
 
-              <dt class="">beeCam Easy連写（iPhone版）</dt>
+              <dt class=""><p><span>beeCam Easy連写（iPhone版）</span></p></dt>
               <dd style="display: none;">
 
                 <dl>
@@ -173,7 +174,7 @@ get_header(); ?>
                 <p>※その他、ご不明な点につきましては、<a href="contact.html?product=LightMeter">こちらからお問い合わせ</a>ください。</p>
               </dd>
 
-              <dt class="">beeIndex MHP3</dt>
+              <dt class=""><p><span>beeIndex MHP3</span></p></dt>
               <dd style="display: none;">
                 ※このiPhoneアプリは弊社所属のえふえむびーもんはん部が趣味の部活で製作したものでしたが
                 <br>株式会社カプコン様よりご指摘があり、アプリの公開を中止致しました。
@@ -181,7 +182,7 @@ get_header(); ?>
                 <br>中止させて頂きます。あしからず、ご了承頂きますようお願い申し上げます。
               </dd>
 
-              <dt class="">beeIndex ぷち</dt>
+              <dt class=""><p><span>beeIndex ぷち</span></p></dt>
               <dd style="display: none;">
 
                 <dl>
@@ -221,12 +222,12 @@ get_header(); ?>
                 <p>※その他、ご不明な点につきましては、<a href="contact.html?product=LightMeter">こちらからお問い合わせ</a>ください。</p>
               </dd>
 
-              <dt class="">アヒルの脱走</dt>
+              <dt class=""><p><span>アヒルの脱走</span></p></dt>
               <dd style="display: none;">現在準備中
                 <p>※ご不明な点につきましては、<a href="contact.html?product=CaptureV">こちらからお問い合わせ</a>ください。 </p>
               </dd>
 
-              <dt class="">beeApp 図書委員(Android版)</dt>
+              <dt class=""><p><span>beeApp 図書委員(Android版)</span></p></dt>
               <dd style="display: none;">
 
                 <dl>
@@ -311,12 +312,12 @@ get_header(); ?>
                 <p>※その他、ご不明な点につきましては、<a href="contact.html?product=LightMeter">こちらからお問い合わせ</a>ください。</p>
               </dd>
 
-              <dt class="">beeApp 図書委員(iPhone版)</dt>
+              <dt class=""><p><span>beeApp 図書委員(iPhone版)</span></p></dt>
               <dd style="display: none;">現在準備中
                 <p>※ご不明な点につきましては、<a href="contact.html?product=CaptureV">こちらからお問い合わせ</a>ください。 </p>
               </dd>
 
-              <dt class="">beeApp ImageCollect</dt>
+              <dt class=""><p><span>beeApp ImageCollect</span></p></dt>
               <dd style="display: none;">
 
                 <dl>
@@ -342,7 +343,7 @@ get_header(); ?>
                 <p>※ご不明な点につきましては、<a href="contact.html?product=CaptureV">こちらからお問い合わせ</a>ください。 </p>
               </dd>
 
-              <dt class="">beeApp WA.RI.KAN(iPhone版)</dt>
+              <dt class=""><p><span>beeApp WA.RI.KAN(iPhone版)</span></p></dt>
               <dd style="display: none;">
 
                 <dl>
@@ -368,7 +369,7 @@ get_header(); ?>
                 <p>※ご不明な点につきましては、<a href="contact.html?product=CaptureV">こちらからお問い合わせ</a>ください。 </p>
               </dd>
 
-              <dt class="">beeApp WA.RI.KAN(Android版)</dt>
+              <dt class=""><p><span>beeApp WA.RI.KAN(Android版)</span></p></dt>
               <dd style="display: none;">
 
                 <dl>
@@ -387,7 +388,7 @@ get_header(); ?>
                 <p>※ご不明な点につきましては、<a href="contact.html?product=CaptureV">こちらからお問い合わせ</a>ください。 </p>
               </dd>
 
-              <dt class="">The Werewolf(人狼ゲーム)</dt>
+              <dt class=""><p><span>The Werewolf(人狼ゲーム)</span></p></dt>
               <dd style="display: none;">現在準備中
                 <p>※ご不明な点につきましては、<a href="contact.html?product=CaptureV">こちらからお問い合わせ</a>ください。 </p>
               </dd>

@@ -21,7 +21,7 @@ $thumbnail_url = wp_get_attachment_image_src ($thumbnail_id);
 ?>
 
 <li>
-  <dl class="product_summary cf">
+  <dl class="column_list product_summary cf">
     <dt>
       <?php
         // サムネイルのsourceがあるか
@@ -32,7 +32,7 @@ $thumbnail_url = wp_get_attachment_image_src ($thumbnail_id);
         }
       ?>
     </dt>
-    <dd class="app_summary">
+    <dd class="column_list_in app_summary">
       <?php
         echo '<h4>'.get_the_title().'</h4>';
         echo '<p class="app_summary_in">'.$summary.'</p>';
