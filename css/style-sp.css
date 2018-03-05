@@ -106,6 +106,9 @@
 }
 
 @media screen and (max-width:500px) {
+  #new .new-in ul dd p{
+    margin-top:0.5rem;
+  }
   #contents .contents-title{
     height:auto;
   }

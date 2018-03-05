@@ -32,14 +32,20 @@ function return_sources(page_name){
   var sources = [];
   switch(page_name){
     case 'fmbee-website':
+/*
       return sources = ["new .new-in ul dd h4 + p", null, "new .new-in ul dl", "div"];
       break;
+*/
     case 'news':
+/*
       return sources = ["press .column_list_in .column_list_message", null, "press .column_list_in", "div"];
       break;
+*/
     case 'products':
+/*
       return sources = ["beeindex .app_summary > div ", null, "beeindex .product_summary dt + dd", "dd"];
       break;
+*/
     default:
       return '';
       break;
