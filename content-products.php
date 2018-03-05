@@ -29,7 +29,7 @@ $thumbnail_url = wp_get_attachment_image_src ($thumbnail_id);
           // twentyfifteen_post_thumbnail();
           echo '<img src="'.$thumbnail_url[0].'" alt />';
         }else{
-          echo '<img src="'.get_template_directory_uri().'/images/logos/logo_noimage.png" alt />';
+          echo '<img src="'.get_template_directory_uri().'/images/logos/logo_noimage2.png" alt />';
         }
       ?>
     </dt>

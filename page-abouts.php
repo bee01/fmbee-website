@@ -236,23 +236,5 @@ get_header(); ?>
   </div>
 </div>
 </div>
-<div id="footer">
-<div class="footer-in">
-  <div class="footer-trademark">
-    <p>iPhoneまたはiPadは、Apple Inc.の商標です。</p>
-    <p>Androidは、Google Inc.の商標または登録商標です。</p>
-  </div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="news/index.html">News</a>
-    <a href="service/index.html">Service</a>
-    <a href="about/index.html">About</a>
-    <a href="products/index.html">Products</a>
-    <a href="support/index.html">Support</a>
-    <a href="contact/index.html">Contact</a>
-    <a href="javascript:void(0);"></a>
-  </nav>
-  <address>(c)2017 FM.Bee inc.</address>
-</div>
 
 <?php get_footer(); ?>

@@ -88,9 +88,9 @@
           echo '<li>';
         // サムネイルのsourceがあるか
         if($thumbnail_url[0]){
-          echo '<dl class="cf"><dt><img src="'.get_template_directory_uri().'/images/logos/logo_werewolf.png"></dt><dd><h4><span>'. get_the_date() .'</span><br />'. get_the_title() .'</h4><p>'. get_the_content() .'</p></dd></dl>';
+          echo '<dl class="cf"><dt><img src="'.$thumbnail_url[0].'" alt /"></dt><dd><h4><span>'. get_the_date() .'</span><br />'. get_the_title() .'</h4><p>'. get_the_content() .'</p></dd></dl>';
         }else{
-          echo '<dl class="cf"><dt><img src="'.get_template_directory_uri().'/images/logos/logo_noimage.png"></dt><dd><h4><span>'. get_the_date() .'</span><br />'. get_the_title() .'</h4><p>'. get_the_content() .'</p></dd></dl>';
+          echo '<dl class="cf"><dt><img src="'.get_template_directory_uri().'/images/logos/logo_noimage2.png"></dt><dd><h4><span>'. get_the_date() .'</span><br />'. get_the_title() .'</h4><p>'. get_the_content() .'</p></dd></dl>';
         }
   			endwhile;
           wp_reset_postdata();

@@ -61,16 +61,15 @@ get_header(); ?>
                   user_trailingslashit('page/%#%/','paged');;
                   $paginate_base .= '%_%';
                 }
-                echo "<div class='pager'>".paginate_links(array(
+          			the_posts_pagination( array(
                   'base' => $paginate_base,
                   'format' => $paginate_format,
                   'total' => $query->max_num_pages,
-                  'mid_size' => 6,
-                  'current' => ($paged ? $paged : 1),
+                  'end_size' => 0,
+                  'mid_size' => 4,
                   'prev_text' => '< 前へ',
                   'next_text' => '次へ >',
-                ))."</div>";
-
+          			));
                 wp_reset_postdata();
               ?>
 

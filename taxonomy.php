@@ -19,7 +19,8 @@
 get_header(); ?>
 
     <div class="contents-title">
-      <h2>HOME > Products(製品紹介)</h2>
+      <h2>PRODUCTS</h2>
+      <h3>FM.Beeの製品情報をご紹介いたします。</h3>
     </div>
     <div class="contents-in cf">
       <div class="contents-left">

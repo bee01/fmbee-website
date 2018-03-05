@@ -42,8 +42,10 @@ get_header(); ?>
             </ul>
             <?php
         			the_posts_pagination( array(
-                      'prev_text' => '< 前へ',
-                      'next_text' => '次へ >',
+                'end_size' => 0,
+                'mid_size' => 4,
+                'prev_text' => '< 前へ',
+                'next_text' => '次へ >',
         			) );
             ?>
           </div>

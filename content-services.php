@@ -26,7 +26,7 @@ $thumbnail_url = wp_get_attachment_image_src ($thumbnail_id);
         if($thumbnail_url[0]){
           twentyfifteen_post_thumbnail();
         }else{
-          echo '<img src="'.get_template_directory_uri().'/images/logos/logo_noimage.png" alt />';
+          echo '<img src="'.get_template_directory_uri().'/images/logos/logo_noimage2.png" alt />';
         }
       ?>
     </dt>
