@@ -23,10 +23,9 @@ $supplement_support = get_field('supplement_support');
 <div class="contents-in cf">
   <div class="contents-left">
     <ul>
-      <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="#setsumei">製品説明</a></li>
-      <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="#manual">ゲームの流れ</a></li>
-      <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="#download">製品のダウンロード</a></li>
-      <li><img src="<?php echo get_template_directory_uri(); ?>/images/icon-kirakira-green.png" alt /><a href="#support">製品に関するサポート</a></li>
+      <?php global $page_kind;
+      $page_kind = "products";
+      get_sidebar("iphone"); ?>
     </ul>
   </div>
   <div class="contents-right">

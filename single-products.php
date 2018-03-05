@@ -9,11 +9,7 @@
 
 get_header(); ?>
 
-<div id="contents">
-  <div class="contents-title">
-    <?php echo show_breadcrumb("products", get_the_title()); ?>
-  </div>
-
+<div id="contents" class="single-content">
 	<?php
 	// Start the loop.
 	while ( have_posts() ) : the_post();

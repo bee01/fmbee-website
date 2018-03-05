@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/flickity.min.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-sp.css">
 <!--[if lt IE 9]>
 <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -87,9 +88,9 @@
           echo '<li>';
         // サムネイルのsourceがあるか
         if($thumbnail_url[0]){
-          echo '<dl class="cf"><dt><img src="'.get_template_directory_uri().'/images/logos/logo_werewolf.png"></dt><dd><h4><span>'. get_the_date() .'</span><br />'. get_the_title() .'</h4><p>'. get_the_content() .'</p><p><a href="'.get_permalink().'">詳しく見る ></a></p></dd></dl>';
+          echo '<dl class="cf"><dt><img src="'.get_template_directory_uri().'/images/logos/logo_werewolf.png"></dt><dd><h4><span>'. get_the_date() .'</span><br />'. get_the_title() .'</h4><p>'. get_the_content() .'</p></dd></dl>';
         }else{
-          echo '<dl class="cf"><dt><img src="'.get_template_directory_uri().'/images/logos/logo_noimage.png"></dt><dd><h4><span>'. get_the_date() .'</span><br />'. get_the_title() .'</h4><p>'. get_the_content() .'</p><p><a href="'.get_permalink().'">詳しく見る ></a></p></dd></dl>';
+          echo '<dl class="cf"><dt><img src="'.get_template_directory_uri().'/images/logos/logo_noimage.png"></dt><dd><h4><span>'. get_the_date() .'</span><br />'. get_the_title() .'</h4><p>'. get_the_content() .'</p></dd></dl>';
         }
   			endwhile;
           wp_reset_postdata();
@@ -154,6 +155,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.slideScroll.js"></script>
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.tentai.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.forMobile.js"></script>
 <!--<script src="js/canvas.js"></script>-->
 <script>
 $(function(){

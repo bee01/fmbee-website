@@ -26,7 +26,8 @@ $thumbnail_url = wp_get_attachment_image_src ($thumbnail_id);
       <?php
         // サムネイルのsourceがあるか
         if($thumbnail_url[0]){
-          twentyfifteen_post_thumbnail();
+          // twentyfifteen_post_thumbnail();
+          echo '<img src="'.$thumbnail_url[0].'" alt />';
         }else{
           echo '<img src="'.get_template_directory_uri().'/images/logos/logo_noimage.png" alt />';
         }
@@ -35,14 +36,14 @@ $thumbnail_url = wp_get_attachment_image_src ($thumbnail_id);
     <dd class="column_list_in app_summary">
       <?php
         echo '<h4>'.get_the_title().'</h4>';
-        echo '<p class="app_summary_in">'.$summary.'</p>';
+        echo '<div><p class="app_summary_in">'.$summary.'</p>';
         echo '<p class="app_summary_link">';
         echo '[公開日] '.get_the_date();
         if($more_detail || $publisher_name){
           if($publisher_name) echo "　".$publisher_name;
           if($more_detail) echo "<br /><a href='".get_permalink()."'>製品詳細ページはこちら</a>";
         }
-        echo '</p>';
+        echo '</p></div>';
       ?>
     </dd>
     <dd class="app_badge">

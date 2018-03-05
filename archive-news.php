@@ -45,10 +45,7 @@ get_header(); ?>
         ?>
         <?php if ( $query->have_posts() ) : ?>
         <div id="press" class="contents-list">
-          <h3>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/icon-press.png" alt>
-            <span><?php echo (single_term_title() != "") ? single_term_title() : "プレスリリース"; ?></span>
-          </h3>
+          <h3><?php echo (single_term_title() != "") ? single_term_title() : "プレスリリース"; ?></h3>
           <div class="contents-list-in">
             <ul id="contents-list-pager">
         			<?php while ( $query->have_posts() ) : $query->the_post();

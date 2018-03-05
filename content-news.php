@@ -17,9 +17,10 @@ $thumbnail_url = wp_get_attachment_image_src ($thumbnail_id);
       <?php
         // サムネイルのsourceがあるか
         if($thumbnail_url[0]){
-          twentyfifteen_post_thumbnail();
+          // twentyfifteen_post_thumbnail();
+          echo '<img src="'.$thumbnail_url[0].'" alt />';
         }else{
-          echo '<img src="'.get_template_directory_uri().'/images/logos/logo_noimage.png" alt />';
+          echo '<img src="'.get_template_directory_uri().'/images/logos/logo_noimage2.png" alt />';
         }
       ?>
     </dt>
@@ -27,7 +28,7 @@ $thumbnail_url = wp_get_attachment_image_src ($thumbnail_id);
       <?php
         echo '<p class="column_list_date">'.get_the_date().'</p>';
         echo '<h4>'.get_the_title().'</h4>';
-    	  echo get_the_content();
+    	  echo '<p class="column_list_message">'.get_the_content().'</p>';
       ?>
     </dd>
   <?php edit_post_link( __( 'Edit', 'twentyfifteen' ), '<footer class="entry-footer"><span class="edit-link">', '</span></footer><!-- .entry-footer -->' ); ?>

@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/flickity.min.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-sp.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-humberger.css" type="text/css" />
 <!--[if lt IE 9]>
 <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -37,6 +39,11 @@
           <a href="<?php echo home_url("/"); ?>supports"><h2>Support</h2><p>製品サポート</p></a>
           <a href="<?php echo home_url("/"); ?>contacts"><h2>Contact</h2><p>お問い合わせ</p></a>
 <!--          <a href="javascript:void(0);"></a>-->
+        </div>
+        <div class="header-menu-humberger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </div>

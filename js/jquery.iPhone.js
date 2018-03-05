@@ -38,4 +38,10 @@ $(function(){
       $(this).css(obj); //cssを適用。
     });
   });
+
+  $(".sidebar-iphone-display-backtotop").click(function(){
+    $('html,body').animate({ scrollTop: 0 }, 'normal');
+    return false;
+  });
+
 });
